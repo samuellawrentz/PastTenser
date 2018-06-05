@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Lato';
+    color: #202C39;
+}
+.wrapper{
+    height:100%;
+    padding:25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left{
+    width:40%;
+    margin: 25px;
+}
+
+.right{
+    width:40%;
+    margin: 25px;
+    font-size: 35px;
+    line-height: 2;
+}
+
+.container{
+    padding: 15px;
+}
+
+.result{
+   
+}
+
+input, input:focus{
+    font-size: 2.5em;
+    margin:10px 0;
+    background: none;
+    border: 1px solid black;
+    border-width: 0 0 2px 0;
+    border-radius: 3%;
+    outline: none;
+}
+
+button{
+    font-size: 2.5em;
+    display: block;
+    border: none;
+    outline: none;
+    background: #747C92;
+    margin:10px;
+    width:200px;
+    color: white;
+}
+
+.center{
+    text-align: left;
+    position:relative;
+    top: 20%;
+}
+
+.center > div:first-child{
+    font-size: 30px
+}
+
+h1{
+    font-size: 70px
+}
+
+.resHead{
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.heading{
+    font-size: 22px;
+}
+
+.past, .participle{
+    font-size: 40px;
+}
