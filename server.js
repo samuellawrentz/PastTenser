@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const port = 8000;
+const port = 8080;
 var fs = require("fs");
 // Get content from file
  var contents = fs.readFileSync("./data/pastdata.json");
