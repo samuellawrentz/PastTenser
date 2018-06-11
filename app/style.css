@@ -7,22 +7,22 @@ body{
     color: #202C39;
 }
 .wrapper{
+    margin: 25px auto;
     height:100%;
     padding:25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .left{
-    width:40%;
-    margin: 25px;
+    width:400px;
 }
 
 .right{
-    width:40%;
-    margin: 25px;
-    font-size: 35px;
-    line-height: 2;
+    width:500px;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-top: 20px;;
 }
 
 .container{
@@ -79,4 +79,9 @@ h1{
 
 .past, .participle{
     font-size: 40px;
+}
+
+.main-heading{
+    font-size: 45px;
+    font-weight: 900;
 }

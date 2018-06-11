@@ -1,6 +1,14 @@
 <head>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+   <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh38N9jp" crossorigin="anonymous">
 </head>
 <body>
 <div class="wrapper">
@@ -8,19 +16,16 @@
         <div class="container query">
 <div class="center">
             <input type="text" placeholder="Type in a verb..">
-        <button>Get</button>
+        <button data-bind="click:getPast">Get</button>
 </div>
     </div>
     <div class="container result">
         <div>
-            <div class="resHead">
-                Result
-            </div>
             <div class="matches">
                 <div class="heading">
                     Past Tense
                 </div>
-                <div class="past">
+                <div class="resHead">
                     Eat
                 </div>
                 <div class="heading">
@@ -33,6 +38,11 @@
         </div>
     </div>
     </div>
-    <div class="right">This part usually gives you the context of the verb directly from the web and also could be used to provide details of the Pastenser and how it works and how it can be developed further.</div>
+    <div class="right">
+    <div class="main-heading">PASTENSER</div>
+    <div>A quick library that gives you the past tense of the entered word. You can also use its API to get data directly to your app. <br>
+    Care should be taken that the provided word is a verb!</div>
+    </div>
 </div>
+   <script src="script/app.js"></script>
 </body>
