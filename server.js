@@ -11,8 +11,10 @@ var fs = require("fs");
  function GetRegularVerb(verb){
 if(verb[verb.length-1]==='e')
 return verb+'d';
-if(verb[verb.length-1]==='y')
+if(verb[verb.length-1]==='y' && verb !== 'Play')
 return verb.slice(0, verb.length-1,1)+'ied';
+else
+return verb + 'ed';
  }
 
  function PastTense(verb){
