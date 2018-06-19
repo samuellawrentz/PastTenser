@@ -2,7 +2,7 @@ var verb= ko.observable();
 function getPast(){
     $.get( "https://pastenser.herokuapp.com/" + verb(), function(data) {
   
-  alert(data);
+  alert(data['past tense']);
 });
 }
 
