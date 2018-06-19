@@ -21,18 +21,18 @@
     </div>
     <div class="container result">
         <div>
-            <div class="matches">
+            <div class="matches" data-bind="if:pasttense">
                 <div class="heading">
                     Past Tense
                 </div>
-                <div class="resHead">
-                    Eat
+                <div class="resHead" data-bind="text:pasttense">
+                    
                 </div>
                 <div class="heading">
                     Participle
                 </div>
-                <div class="participle">
-                    Ate
+                <div class="participle" data-bind="text:participle">
+                    
                 </div>
             </div>
         </div>
