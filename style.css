@@ -41,6 +41,7 @@ input, input:focus{
     border-width: 0 0 2px 0;
     border-radius: 3%;
     outline: none;
+	text-transform:capitalize;
 }
 
 button{
