@@ -22,4 +22,6 @@ Response
 ## Note
 The first letter of the verb must be capital.
 
+This API is not artificially intelligent to distinguish between verbs, nouns, adjectives, etc. Please be sure that **only a verb is sent** in the API request to avoid receiving wierd and strange words as past tense :) 
+
 The data is fetched from a static data-source. Might be unrelaiable and sometimes wrong or out-dated.
