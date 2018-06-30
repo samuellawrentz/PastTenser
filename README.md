@@ -1,5 +1,5 @@
 # PastTenser
-A web API that returns the past tense and the past participle tense of a given verb.
+A web API that returns the past tense and the past participle tense of a given verb built on **NodeJs**.
 
 View the demo on https://samuellawrentz.github.io/PastTenser
 
