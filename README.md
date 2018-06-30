@@ -1,5 +1,6 @@
 # PastTenser
 A web API that returns the past tense and the past participle tense of a given verb.
+View the demo on https://samuellawrentz.github.io/PastTenser
 
 ## Requests
 You could send your API requests to https://pastenser.herokuapp.com/Verb
