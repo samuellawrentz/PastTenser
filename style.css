@@ -5,6 +5,7 @@ body{
     padding:0;
     font-family: 'Lato';
     color: #202C39;
+    background: linear-gradient(#f0fcff, white);
 }
 .wrapper{
     margin: 25px auto;
@@ -15,22 +16,18 @@ body{
     flex-wrap: wrap;
 }
 .left{
-    width:400px;
+    flex-basis:500px;
 }
 
 .right{
-    width:500px;
+    flex-basis:500px;
     font-size: 30px;
     line-height: 1.5;
-    padding-top: 20px;;
+    padding-top: 20px;
 }
 
 .container{
     padding: 15px;
-}
-
-.result{
-   
 }
 
 input, input:focus{
@@ -53,6 +50,7 @@ button{
     margin:10px;
     width:200px;
     color: white;
+    cursor: pointer;
 }
 
 .center{
@@ -85,4 +83,33 @@ h1{
 .main-heading{
     font-size: 45px;
     font-weight: 900;
+}
+
+.warning{
+    font-size: 0.7em;
+}
+
+.warning span{
+    color:#cc2121;
+}
+
+.right ul{
+    padding:0;
+    margin:0;
+}
+
+.right li{
+    display: inline-block;
+    font-size: 0.8em;
+    padding-right: 15px;
+}
+
+.right h5{
+    margin: 15px auto;
+    margin-bottom: 0px;
+    font-weight: bolder;
+}
+
+h5+a{
+    font-size: 0.8em;
 }

@@ -1,48 +1,60 @@
 <head>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-   <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<div class="wrapper">
-    <div class="left">
-        <div class="container query">
-<div class="center">
-            <input type="text" placeholder="Type in a verb.." data-bind="value:verb">
-        <button data-bind="click:getPast">Get</button>
-</div>
-    </div>
-    <div class="container result">
-        <div>
-            <div class="matches" data-bind="if:pasttense">
-                <div class="heading">
-                    Past Tense
+    <div class="wrapper">
+        <div class="left">
+            <div class="container query">
+                <div class="center">
+                    <form action="javascript:getPast();">
+                        <input type="text" placeholder="Type in a verb.." data-bind="value:verb">
+                        <button data-bind="click:getPast" type="submit">Get</button>
+                    </form>
                 </div>
-                <div class="resHead" data-bind="text:pasttense">
-                    
-                </div>
-                <div class="heading">
-                    Participle
-                </div>
-                <div class="participle" data-bind="text:participle">
-                    
+            </div>
+            <div class="container result">  
+                <div>
+                    <div class="matches" data-bind="if:pasttense">
+                        <div class="heading">
+                            Past Tense
+                        </div>
+                        <div class="resHead" data-bind="text:pasttense">
+
+                        </div>
+                        <div class="heading">
+                            Participle
+                        </div>
+                        <div class="participle" data-bind="text:participle">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="right">
+            <div class="main-heading">PASTENSER</div>
+            <div>A quick API that gives you the past tense of the requested verb.</div>
+            <div class="warning">
+                <p> Life is full of surprises! To avoid getting surprises from this API,
+                <span>please pass only a verb in the request.</span></p>
+
+                Also, this API doesn't have NLP or AI module backing it. <span>The results may not be right all the time,</span> so please don't use this 
+                for your homework.
+            </div>
+            <h5>BUILT ON</h5>
+            <ul>
+                <li>Node</li>
+                <li>Express</li>
+                <li>Jquery</li>
+                <li>KnockoutJs</li>
+            </ul>
+            <h5>CODE</h5>
+            <a href="https://github.com/samuellawrentz/PastTenser">Fork me! Star me! Follow me!</a>
+        </div>
     </div>
-    </div>
-    <div class="right">
-    <div class="main-heading">PASTENSER</div>
-    <div>A quick library that gives you the past tense of the entered word. You can also use its API to get data directly to your app. <br>
-    Care should be taken that the provided word is a verb!</div>
-    </div>
-</div>
-   <script src="script/app.js"></script>
+    <script src="script/app.js"></script>
 </body>
